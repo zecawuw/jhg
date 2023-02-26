@@ -1,0 +1,583 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #110f17
+}
+
+/* COMEÇO DO HEADER */
+
+header{
+    width: 100%;
+    background-color: #110f17;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #363142;
+    overflow: hidden;
+}
+
+header h1{
+    position: relative;
+    left: 10px;
+    font-size: 28px;
+    color: aliceblue;
+}
+
+.web_header{
+    display: flex;
+}
+
+header ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+header, li{
+    margin-right: 10px;
+    color: aliceblue;
+    font-weight: 600;
+
+}
+
+li, a{
+    cursor: pointer;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+header #but_entrar{
+    margin-left: 30px;
+    cursor: pointer;
+    outline: none;
+    padding: 8px;
+    border: 1px solid #e1e1e6;
+    border-radius: 8px;
+    box-shadow: none;
+    color: #e1e1e6;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+header #but_cadastro_header{
+    margin-left: 10px;
+    cursor: pointer;
+    margin-left: 30px;
+    cursor: pointer;
+    outline: none;
+    padding: 8px;
+    border: 1px solid #e1e1e6;
+    border-radius: 8px;
+    box-shadow: none;
+    color: #e1e1e6;
+    background-color: #110f17;
+    font-size: 12px;
+}
+
+/* mobile inicio */
+
+#fundo_mobile{
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#mobile_home{
+    width: 300px;
+    height: 100%;
+    background-color: #1a1821;
+    position:absolute;
+    display: none;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+#mobile_home > h1{
+    position: relative;
+    left: 10px;
+    font-size: 28px;
+    margin: 50px;
+    color: aliceblue;
+}
+
+#mobile_header2{
+    position: relative;
+    top: -120px;
+    left: 251px;
+    color: #c1c1ca;
+}
+
+#mobile_home > ul > li{
+    margin: 10px;
+    background-color: #352950;
+    padding: 10px;
+    border-radius: 8px ;
+    color: #c1c1ca;
+}
+
+.bots_mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#but_entrar_mob{
+    margin-top: 100px;
+    width: 200px;
+    cursor: pointer;
+    cursor: pointer;
+    outline: none;
+    padding: 8px;
+    border: 1px solid #e1e1e6;
+    border-radius: 8px;
+    box-shadow: none;
+    color: #e1e1e6;
+    background-color: #110f17;
+    font-size: 18px;
+}
+
+#but_cadastro_header_mob{
+    width: 200px;
+    margin-top: 30px;
+    cursor: pointer;
+    cursor: pointer;
+    outline: none;
+    padding: 8px;
+    border: 1px solid #e1e1e6;
+    border-radius: 8px;
+    box-shadow: none;
+    color: #e1e1e6;
+    background-color: #110f17;
+    font-size: 18px;
+}
+
+/* mobile fim*/
+
+/* FINAL DO HEADER */
+
+/* COMEÇO DA HOME */
+
+.sec_home{
+    margin: 0 auto;
+    background-color: #110f17;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 83px 3%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 1120px;
+    justify-content:space-around;
+    overflow: hidden;
+}
+
+.texto_home{
+    z-index: 2;
+    position: relative;
+    max-width: 355px;
+    width: 100%;
+}
+
+.texto_home > h1{
+    text-align: left;
+    font-size: 50px;
+    margin: 30px 1px;
+    color: #e1e1e6;
+}
+
+#but_cadastro_home{
+    width: 300px;
+    margin: 24px 0;
+    cursor: pointer;
+    cursor: pointer;
+    outline: none;
+    padding: 8px;
+    border: 1px solid #7855c3;
+    border-radius: 8px;
+    background-color: #7855c3;
+    box-shadow: none;
+    color: #fffffd;
+    font-size: 25px;
+}
+
+.img-maior{
+    position: absolute;
+    z-index: 2;
+    width: 352px;
+    height: 400px;
+    right: 10px;
+    background-image: linear-gradient(rgba(120, 85, 195, 0.28) 0%, rgb(51, 30, 97) 100%), url(https://d1i4tvf70h7zdy.cloudfront.net/ead/images/hero/home/box_2.png);
+    border-radius: 24px;
+}
+
+.img-menor{
+    z-index: 3;
+    position: absolute;
+    width: 158px;
+    height: 241px;
+    right: 393px;
+    bottom: 0px;
+    background-image: linear-gradient(rgba(120, 85, 195, 0.28) 0%, rgb(51, 30, 97) 100%), url(https://d1i4tvf70h7zdy.cloudfront.net/ead/images/hero/home/box_1.png);
+    background-size: cover;
+    border-radius: 24px;
+}
+.img-texto{
+    display: inline;
+    z-index: 1;
+    position: relative;
+    width: 500px;
+}
+
+.img-pessoas-texto{
+    width: 160px;
+    position: relative;
+    top: 8px;
+}
+
+/* FINAL DO HOME */
+
+/* COMECO CURSOS */
+
+.home_cursos{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto !important;
+}
+
+.curso{
+    width: 100%;
+    min-width: 256px;
+    max-width: 352px;
+    background-color: #282433;
+    color: #e1e1e6;
+    display: flex;
+    border-radius: 16px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.curso > div > h3{
+    margin: 30px;
+}
+
+.curso > div > p{
+    margin: 30px;
+}
+
+/* FINAL CURSOS */
+
+/* começo cadastro */
+
+.cadastro_home{
+    display: flex;
+    flex-direction: row;
+}
+
+.cadastro{
+    color: #e1e1e6;
+    width: 50%;
+    background: linear-gradient(rgba(104, 73, 170, 0.28) 0% ) 0% 0% / cover;
+}
+
+.cadastro-1{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    max-width: 352px;
+    margin: 0 auto;
+}
+
+.cadastro-1 > h3{
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.cadastro-1 > p{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.img-cadastro{
+    height: 100vh;
+    width: 50%;
+    background: linear-gradient(rgba(104, 73, 170, 0.28) 0%, rgb(23, 15, 39) 100%) 0% 0% / cover, url(https://d1i4tvf70h7zdy.cloudfront.net/ead/images/auth/register.jpg) no-repeat;
+    background-size: cover;
+}
+
+.input-cadastro{
+    width: 100%;
+    min-width: 0px;
+    outline-offset: 2px;
+    position: relative;
+    appearance: none;
+    transition-duration: 200ms;
+    font-size: 0.875rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    height: 2.5rem;
+    background-color: #282433;;
+    border-style: solid;
+    border-image: initial;
+    border-color: #363142;;
+    border-width: 1px;
+    border-radius: 8px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    margin-bottom: 30px;
+}
+
+.input-cadastro1{
+    width: 100%;
+    min-width: 0px;
+    outline-offset: 2px;
+    position: relative;
+    appearance: none;
+    transition-duration: 200ms;
+    font-size: 0.875rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    height: 2.5rem;
+    background-color: #fffffd;
+    border-style: solid;
+    border-image: initial;
+    border-color: #363142;;
+    border-width: 1px;
+    border-radius: 8px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    margin-bottom: 30px;
+}
+
+#but_criar-conta{
+    width: 100px;
+    margin: 24px 0;
+    cursor: pointer;
+    cursor: pointer;
+    outline: none;
+    padding: 8px;
+    border: 1px solid #7855c3;
+    border-radius: 8px;
+    background-color: #7855c3;
+    box-shadow: none;
+    color: #fffffd;
+    font-size: 15px;
+}
+
+/* final cadastro */
+
+/* começo login */
+
+.login_home{
+    display: flex;
+    flex-direction: row;
+}
+
+.login{
+    color: #e1e1e6;
+    width: 50%;
+    background: linear-gradient(rgba(104, 73, 170, 0.28) 0% ) 0% 0% / cover;
+}
+
+.login-1{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    max-width: 352px;
+    margin: 0 auto;
+}
+
+.login-1 > h3{
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.login-1 > p{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.img-login{
+    height: 100vh;
+    width: 50%;
+    background: linear-gradient(rgba(104, 73, 170, 0.28) 0%, rgb(23, 15, 39) 100%) 0% 0% / cover, url(https://d1i4tvf70h7zdy.cloudfront.net/ead/images/auth/login.jpg) no-repeat;
+    background-size: cover;
+}
+
+.input-login{
+    width: 100%;
+    min-width: 0px;
+    outline-offset: 2px;
+    position: relative;
+    appearance: none;
+    transition-duration: 200ms;
+    font-size: 0.875rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    height: 2.5rem;
+    background-color: #282433;;
+    border-style: solid;
+    border-image: initial;
+    border-color: #363142;;
+    border-width: 1px;
+    border-radius: 8px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    margin-bottom: 30px;
+}
+
+#but_criar-conta{
+    width: 100px;
+    margin: 24px 0;
+    cursor: pointer;
+    cursor: pointer;
+    outline: none;
+    padding: 8px;
+    border: 1px solid #7855c3;
+    border-radius: 8px;
+    background-color: #7855c3;
+    box-shadow: none;
+    color: #fffffd;
+    font-size: 15px;
+}
+
+/* final login */
+
+/* COMEÇO DO MEDIA SCREEN */
+
+@media screen and (max-width: 990px){
+    .web_header{
+        display: none;
+    }
+    
+    #mobile_header2{
+        display: none; 
+        font-size: 33px;
+    }
+
+    #material-symbols-outlined{
+        display: none !important;
+    }
+
+    #mobile_home{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 990px){
+    .material-symbols-outlined{
+        cursor: pointer !important;
+        display: none !important;
+    }
+
+    #mobile_home{
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width: 882px) {
+
+    .img-maior{
+        position: absolute;
+        top: 85px;
+    }
+
+    .img-menor{
+        display: none;
+    }
+
+    .img-texto{
+        position:relative;
+        top: -443px;
+    }
+
+    .sec_home{
+        display: block;
+    }
+
+    .texto_home{
+        position: relative;
+        top: -30px;
+    }
+
+}
+
+@media screen and (max-width: 741px) {
+
+    .img-maior{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 741px) {
+
+    .cadastro_home{
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        background-image: linear-gradient(180deg, rgba(93,62,160, 0.2) -50%, transparent 100%),url(https://d1i4tvf70h7zdy.cloudfront.net/ead/images/auth/register.jpg);
+        background-color: rgba(20,10,23, 0.99);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: multiply;
+    }
+
+    .cadastro{
+        width: 100%;
+    }
+
+    .img-cadastro{
+        display: none;
+    }
+
+    .login_home{
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        background-image: linear-gradient(180deg, rgba(93,62,160, 0.2) -50%, transparent 100%),url(https://d1i4tvf70h7zdy.cloudfront.net/ead/images/auth/login.jpg);
+        background-color: rgba(20,10,23, 0.99);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: multiply;
+    }
+
+    .login{
+        width: 100%;
+    }
+
+    .img-login{
+        display: none;
+    }
+
+}
+
+/* FIM DO MEDIA SCREEN */
+
